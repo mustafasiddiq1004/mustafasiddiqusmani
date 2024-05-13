@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --teal: #2ec1ac;
+    --teal_hover: #279ebc;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.h-font {
+    font-family: "Merienda", cursive;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.custome-bg {
+    background-color: var(--teal);
+    border: 1px solid var(--teal);
+}
+
+.custome-bg:hover {
+    background-color: var(--teal_hover);
+}
+
+.h-line {
+    width: 150px;
+    margin: 0 auto;
+    height: 1.7px;
+}
+
+.carousel {
+    background-image: url(../images/mustafa.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.carousel-item {
+    height: 90vh;
+    min-height: 355px;
+}
+
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+    right: 60%;
+    text-align: left;
+}
+
+.carousel-caption h3 {
+    font-size: 35px;
+    font-family: "Merienda", cursive;
+    color: #09184a;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.carousel-caption h3 span {
+    color: #e53f29;
+    font-family: "Merienda", cursive;
+}
+
+
+.carousel-caption h5 {
+    font-size: 30px;
+    margin-top: 13px;
+    color: black;
+    font-weight: 700;
+}
+
+.carousel-caption h5 span {
+    color: #e53f29;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #09184a;
+}
+
+.carousel-caption a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+
+.socials-container {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.carousel-caption .socials-container a {
+    border: .5px solid black;
+    border-radius: 7rem;
+}
+
+.carousel-caption .socials-container a i {
+    font-size: 31px;
+    color: #09184a;
+    padding: 11px;
+}
+
+#about-bottom .card i {
+    font-size: 27px;
+    color: black;
+}
+
+#about-bottom .card h4 {
+    font-weight: 600;
+    color: #e53f29;
+}
+
+#about-bottom .card p {
+    font-weight: 700;
+    font-size: 21px;
+    color: #09184a;
+}
+
+#skills-container {
+    background-color: #dcdcdc !important;
+}
+
+#skills-container .single-skill {
+    width: 230px;
+    height: 230px;
+    transition: width 2s, height 2s;
+    max-width: 250px;
+}
+
+#skills-container .single-skill:hover {
+    /* width: 250px;
+    height: 250px; */
+    transition: .5s ease-in-out;
+    transform: rotate(360deg);
+}
+
+
+#skills-container .single-skill .progress:hover {
+    height: 7px !important;
+}
+
+@media screen and (max-width: 576px) {
+    .carousel {
+        position: relative;
+        height: fit-content;
+        background-image: url(../images/sm-slider-bg-3.jpg);
+        object-fit: contain;
+    }
+
+    .carousel-caption {
+        bottom: 17px;
+        right: 0;
+        color: white;
+    }
+
+    .carousel-caption h3 {
+        font-size: 25px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 21px;
+    }
+
+    .socials-container {
+        justify-content: center;
+    }
+}
